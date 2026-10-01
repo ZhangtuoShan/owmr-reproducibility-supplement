@@ -1,0 +1,53 @@
+\begin{table}[!htbp]
+\centering
+\caption{Performance on Nonstationary-Demand Instances}
+\label{tab:nonstationary_results}
+
+\begin{threeparttable}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l *{2}{ccc} c}
+\toprule
+\multirow{2}{*}{\textbf{Instance}}
+& \multicolumn{3}{c}{\textbf{RA-SAC}}
+& \multicolumn{3}{c}{\textbf{Rolling-Horizon DA}}
+& \multirow{2}{*}{\textbf{Gap}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+& Mean & SE & Med.
+& Mean & SE & Med.
+& \\
+\midrule
+\texttt{50102914}
+& \textbf{35.02} & 0.47 & 31.69
+& 68.28 & 1.32 & 58.65
+& $-48.7\%$ \\
+\texttt{98011894}
+& \textbf{1032.95} & 13.71 & 964.54
+& 1979.92 & 38.82 & 1550.38
+& $-47.8\%$ \\
+\texttt{02351RFH-005}
+& \textbf{204.40} & 3.56 & 168.65
+& 215.05 & 1.74 & 211.54
+& $-5.0\%$ \\
+\texttt{98011941}
+& \textbf{914.19} & 9.81 & 882.08
+& 1037.31 & 14.55 & 986.04
+& $-11.9\%$ \\
+\texttt{02352QGG-004}
+& \textbf{1332.85} & 11.50 & 1264.81
+& 1468.38 & 14.95 & 1354.50
+& $-9.2\%$ \\
+\bottomrule
+\end{tabular}
+}
+\begin{tablenotes}
+\footnotesize
+\item Results report the average controllable cost per week over the 13-week
+planning horizon. Both methods are evaluated on the same 1,000 demand paths
+for each instance, and the RA-SAC entries use the best formally reassessed
+checkpoint. The standard error reflects variation across evaluation paths.
+The gap is calculated as
+$(\text{RA-SAC}-\text{Rolling-Horizon DA})/\text{Rolling-Horizon DA}$;
+therefore, a negative value favors RA-SAC.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -1,0 +1,103 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:specific_case_results",
+  "paper_table_description": "Table 15 randomized instances",
+  "manifest_row": {
+    "benchmark": "RA-SAC ineq.",
+    "case": "2-1",
+    "status": "adopted",
+    "best_avgR": "-0030.590",
+    "best_cost": "30.59",
+    "best_step": "973312",
+    "final_avgR": "",
+    "checkpoint_or_policy": "outputs/train/priority2a_grid_sac_ineq_2_1_lr0p01_rs0p25_alr0p0001_1m/2-1/actor__000000973312_-0030.590.pt",
+    "source": "outputs/evaluation/recent_sac_candidates_common_1000ep_20260731/summary.md",
+    "notes": "selected by paired independent 1000-episode common-demand evaluation",
+    "validated_mean_cost": "30.611378",
+    "validated_se": "0.0371455240786",
+    "validated_median": "30.594",
+    "validated_evaluation_source": "outputs/evaluation/table15_four_methods_common1000_20260731/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "outputs/train/priority2a_grid_sac_ineq_2_1_lr0p01_rs0p25_alr0p0001_1m/2-1/actor__000000973312_-0030.590.pt",
+  "packaged_checkpoint_path": "models/native/8a7f2a929c0262c6.pt",
+  "packaged_trial_dir": null,
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "outputs/train/priority2a_grid_sac_ineq_2_1_lr0p01_rs0p25_alr0p0001_1m/2-1/actor__000000973312_-0030.590.pt",
+  "checkpoint_sha256": "8a7f2a929c0262c6f42d35b58c35252407cb265ba8adf438ae24ba2ac45e7f15",
+  "training_step": "973312",
+  "training_seed": null,
+  "training_budget_steps": 1000000,
+  "observed_final_training_step": 993792,
+  "action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "cdc_bsl_min_override": 40.0,
+    "cdc_bsl_max_override": 100.0,
+    "table15_action_space_profile": null,
+    "cdc_lower_rule": null
+  },
+  "resolved_action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "cdc_bsl_min_override": 40.0,
+    "cdc_bsl_max_override": 100.0,
+    "table15_action_space_profile": null,
+    "cdc_lower_rule": null
+  },
+  "configuration_evidence": "checkpoint-matched archived protocol",
+  "saved_protocol": {
+    "case": "2-1",
+    "case_index": 0,
+    "benchmark": "ra_sac_ineq",
+    "agent": "AgentSAC",
+    "allocation_rule": "prioritized_greedy_inequality",
+    "lr": 0.01,
+    "reward_scale": 0.25,
+    "gamma": 0.96,
+    "net_dims": [
+      64,
+      32
+    ],
+    "batch_size": 64,
+    "repeat_times": 0.5,
+    "horizon_len": 512,
+    "break_step": 1000000,
+    "warmup_steps": 512,
+    "fixed_state_norm": false,
+    "alpha_lr": 0.0001,
+    "eval_per_step": 10000,
+    "device": "cpu",
+    "cwd": "/Users/zhangtuo_shan/Documents/Resarch/华为库存项目/材料整理0809/code_new_input_1009/outputs/train/priority2a_grid_sac_ineq_2_1_lr0p01_rs0p25_alr0p0001_1m/2-1",
+    "rdc_bsl_min_override": null,
+    "cdc_bsl_min_override": 40.0,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "cdc_bsl_max_override": 100.0,
+    "action_space_profile": "size_aware_v1"
+  },
+  "ray_params": null,
+  "saved_protocol_evidence_source": "outputs/evaluation/recent_sac_candidates_common_1000ep_20260731/specs.json",
+  "saved_protocol_all_sources": [
+    "outputs/evaluation/recent_sac_candidates_common_1000ep_20260731/specs.json",
+    "outputs/evaluation/table15_four_methods_common1000_20260731/specs.json",
+    "outputs/summaries/rasac_all_cases_long_from_scratch_20260803_plan.json"
+  ],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": null
+}

@@ -1,0 +1,28 @@
+run:
+  PPO
+#restore: Experiments/distribution_lostsales/ray_results/PPO/PPO_GymWrapper_0_lead_time=1_2020-09-01_20-51-53qv0sdp6a/checkpoint_760/checkpoint-760
+#resume: True
+stop:
+  timesteps_total: 150_000_000
+config:
+  framework: 'tf'
+#  eager_tracing: True
+  disable_env_checking: True
+  num_workers: 12
+  num_gpus: 0
+  sgd_minibatch_size: 32768
+  lr: 0.0001
+  vf_loss_coeff: 1.0e-07
+  vf_clip_param: 1000.0
+  grad_clip: 40.0
+  num_sgd_iter: 30
+  gamma: 0.95
+  use_critic: true
+  use_gae: true
+  train_batch_size: 327680
+  lambda: 0.98
+  batch_mode: complete_episodes
+  model:
+    fcnet_hiddens: [64, 64]
+    fcnet_activation: tanh
+    vf_share_layers: false

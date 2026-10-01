@@ -1,0 +1,9 @@
+[
+  {
+    "job": "source_ppo_2_1_smoke",
+    "kind": "source_ppo",
+    "trial_dir": "scm_rl-master/experiments/portable_trials/trial_a6ef6e0b4436",
+    "checkpoint": "scm_rl-master/experiments/portable_trials/trial_a6ef6e0b4436/checkpoint_000180",
+    "demand_bank": "native/examples/2_1_demand_bank.npz"
+  }
+]

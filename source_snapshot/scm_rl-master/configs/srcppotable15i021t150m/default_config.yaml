@@ -1,0 +1,40 @@
+number_of_stores: 2
+prob_customer_waiting: 0.8
+allocation_type: connected_buckets_allocation
+delay_to_warehouse: 1
+delay_to_stores:
+- 1
+- 1
+warehouse_holding_cost: 1.0
+store_holding_cost:
+- 2.0
+- 2.0
+shortage_cost:
+- 10.0
+- 10.0
+is_retailer_backlog: true
+store_capacity: 0
+is_emergency_shipment: false
+cost_emergency_shipment: 0
+demand_distribution:
+- poisson
+- poisson
+mean_demand_stores:
+- 10.0
+- 10.0
+std_demand_stores:
+- 3.1622776601683795
+- 3.1622776601683795
+episode_length: 100
+full_state: false
+stores_start_level:
+- 20
+- 20
+warehouse_start_level: 20
+warehouse_capacity: 310
+production_capacity: 31
+warehouse_action_unit: 1
+max_allowed_action:
+- 32
+- 16
+- 16

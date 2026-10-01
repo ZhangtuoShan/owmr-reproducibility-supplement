@@ -1,0 +1,52 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:small_rvi_results",
+  "paper_table_description": "Small-instance diagnostic table",
+  "manifest_row": {
+    "benchmark": "DA",
+    "case": "S1",
+    "status": "adopted",
+    "best_avgR": "-8.32798",
+    "best_cost": "8.32798",
+    "best_step": "",
+    "final_avgR": "",
+    "checkpoint_or_policy": "CDC=9.0; RDC={\"1\": 4.0, \"2\": 4.0}",
+    "source": "outputs/evaluation/small_rvi_heuristics_distribution_aware.csv",
+    "notes": "mean valid; historical SE/median require corrected independent evaluation",
+    "validated_mean_cost": "8.424378",
+    "validated_se": "0.00782988430337",
+    "validated_median": "8.431",
+    "validated_evaluation_source": "outputs/evaluation/s1s2_13bench_rvi_1000ep_20260728/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": {
+    "CDC_target": 9.0,
+    "retailer_targets": {
+      "1": 4.0,
+      "2": 4.0
+    }
+  },
+  "selected_checkpoint_or_policy": "CDC=9.0; RDC={\"1\": 4.0, \"2\": 4.0}",
+  "checkpoint_available_at_packaging": false,
+  "checkpoint_hash_target": null,
+  "checkpoint_sha256": null,
+  "training_step": null,
+  "training_seed": null,
+  "training_budget_steps": null,
+  "observed_final_training_step": null,
+  "action_bounds": {},
+  "resolved_action_bounds": {},
+  "configuration_evidence": "heuristic parameters/method in manifest",
+  "saved_protocol": null,
+  "ray_params": null,
+  "saved_protocol_evidence_source": null,
+  "saved_protocol_all_sources": [],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": null
+}

@@ -1,0 +1,68 @@
+% Common-demand evaluation: 1000 episodes, 1000 periods per episode,
+% statistics computed from the episode-average costs over periods 501--1000.
+% The reported uncertainty is the standard error (SE) across episodes.
+\begin{table}[!htbp]
+\centering
+\caption{Performance on Small Diagnostic Instances}
+\label{tab:small_rvi_results}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l *{6}{ccc}}
+\toprule
+\multirow{2}{*}{\textbf{Case}}
+& \multicolumn{3}{c}{\textbf{RVI}}
+& \multicolumn{3}{c}{\textbf{RA-SAC}}
+& \multicolumn{3}{c}{\textbf{RA-SAC ineq.}}
+& \multicolumn{3}{c}{\textbf{PPO} (\citeauthor{kaynov2024deep})}
+& \multicolumn{3}{c}{\textbf{RA-PPO}}
+& \multicolumn{3}{c}{\textbf{RA-TD3}}
+\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+\cmidrule(lr){11-13}\cmidrule(lr){14-16}\cmidrule(lr){17-19}
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.\\
+\midrule
+S1 & 7.799 & 0.001 & 7.799 & 7.832 & 0.009 & 7.818 & 7.848 & 0.009 & 7.829 & 8.089 & 0.011 & 8.068 & 8.572 & 0.012 & 8.557 & 8.458 & 0.011 & 8.457 \\
+S2 & 11.875 & 0.002 & 11.874 & 11.971 & 0.015 & 11.971 & 11.996 & 0.015 & 11.972 & 12.532 & 0.018 & 12.523 & 12.500 & 0.016 & 12.494 & 12.193 & 0.015 & 12.186 \\
+\midrule
+\multirow{2}{*}{\textbf{Case}}
+& \multicolumn{3}{c}{\textbf{PA-SAC}}
+& \multicolumn{3}{c}{\textbf{SA-SAC}}
+& \multicolumn{3}{c}{\textbf{AN-SAC}}
+& \multicolumn{3}{c}{\textbf{Penalty-AN-SAC}}
+& \multicolumn{3}{c}{\textbf{Lag-AN-SAC}}
+& \multicolumn{3}{c}{}
+\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+\cmidrule(lr){11-13}\cmidrule(lr){14-16}
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.
+& & & \\
+\midrule
+S1 & 8.145 & 0.010 & 8.143 & 9.401 & 0.011 & 9.406 & 8.048 & 0.009 & 8.040 & 7.972 & 0.009 & 7.961 & 8.138 & 0.008 & 8.130 & & & \\
+S2 & 12.294 & 0.016 & 12.294 & 13.962 & 0.018 & 13.952 & 12.198 & 0.016 & 12.194 & 12.122 & 0.015 & 12.116 & 12.748 & 0.013 & 12.748 & & & \\
+\midrule
+\multirow{2}{*}{\textbf{Case}}
+& \multicolumn{3}{c}{\textbf{DA} (\citeauthor{rong2017heuristics})}
+& \multicolumn{3}{c}{\textbf{RB} (\citeauthor{gallego2007bounds})}
+& \multicolumn{3}{c}{\textbf{RO} (\citeauthor{rong2017heuristics})}
+& \multicolumn{9}{c}{}
+\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+& Mean & SE & Med.
+& Mean & SE & Med.
+& Mean & SE & Med.
+& & & & & & & & & \\
+\midrule
+S1 & 8.424 & 0.008 & 8.431 & 7.962 & 0.009 & 7.958 & 8.111 & 0.009 & 8.112 & & & & & & & & & \\
+S2 & 12.351 & 0.013 & 12.363 & 11.882 & 0.014 & 11.874 & 12.097 & 0.015 & 12.084 & & & & & & & & & \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

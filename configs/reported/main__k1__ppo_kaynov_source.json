@@ -1,0 +1,185 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:literature_results",
+  "paper_table_description": "Kaynov K0-K6 literature table",
+  "manifest_row": {
+    "benchmark": "PPO (Kaynov source)",
+    "case": "K1",
+    "status": "adopted",
+    "best_avgR": "-14.288339",
+    "best_cost": "14.288339",
+    "best_step": "144672000",
+    "final_avgR": "",
+    "checkpoint_or_policy": "scm_rl-master/experiments/scenario_2/ray_results/PPO/PPO_OWMREnvironment_c4547_00000_0_2026-07-09_02-49-40/checkpoint_000440",
+    "source": "outputs/summaries/kaynov_source_ppo_best_ckpt_to150m_summary.md",
+    "notes": "",
+    "validated_mean_cost": "13.256738",
+    "validated_se": "0.0160484772791",
+    "validated_median": "13.2255",
+    "validated_evaluation_source": "outputs/evaluation/k0k6_all13_common1000_20260801/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "scm_rl-master/experiments/scenario_2/ray_results/PPO/PPO_OWMREnvironment_c4547_00000_0_2026-07-09_02-49-40/checkpoint_000440",
+  "packaged_checkpoint_path": "source_snapshot/scm_rl-master/experiments/portable_trials/trial_7834f46ca540/checkpoint_000440/checkpoint-440",
+  "packaged_trial_dir": "source_snapshot/scm_rl-master/experiments/portable_trials/trial_7834f46ca540",
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "scm_rl-master/experiments/scenario_2/ray_results/PPO/PPO_OWMREnvironment_c4547_00000_0_2026-07-09_02-49-40/checkpoint_000440/checkpoint-440",
+  "checkpoint_sha256": "d545353384330d6779b6aa6dde4422ab723d63bc19c97b17d97d33bf22969f96",
+  "training_step": "144672000",
+  "training_seed": null,
+  "training_budget_steps": null,
+  "observed_final_training_step": 150261600,
+  "action_bounds": {
+    "max_allowed_action": 30,
+    "retailer_max_order_quantities": null,
+    "retailer_action_units": null,
+    "warehouse_action_unit": null,
+    "discrete_branch_counts": [
+      30,
+      30,
+      30,
+      30
+    ],
+    "CDC_order_quantity_grid_max_before_capacity_clip": 29,
+    "CDC_order_quantity_max_after_production_capacity": 0,
+    "retailer_request_grid_max_after_request_caps": [
+      29,
+      29,
+      29
+    ],
+    "lower_grid_value": 0,
+    "semantics": "MultiDiscrete branch counts; actual CDC production is also inventory-capacity-clipped; retailer requests are further allocation-clipped"
+  },
+  "resolved_action_bounds": {
+    "max_allowed_action": 30,
+    "retailer_max_order_quantities": null,
+    "retailer_action_units": null,
+    "warehouse_action_unit": null,
+    "discrete_branch_counts": [
+      30,
+      30,
+      30,
+      30
+    ],
+    "CDC_order_quantity_grid_max_before_capacity_clip": 29,
+    "CDC_order_quantity_max_after_production_capacity": 0,
+    "retailer_request_grid_max_after_request_caps": [
+      29,
+      29,
+      29
+    ],
+    "lower_grid_value": 0,
+    "semantics": "MultiDiscrete branch counts; actual CDC production is also inventory-capacity-clipped; retailer requests are further allocation-clipped"
+  },
+  "configuration_evidence": "Ray params.json",
+  "saved_protocol": null,
+  "ray_params": {
+    "batch_mode": "complete_episodes",
+    "disable_env_checking": true,
+    "env": "<class 'scsim.supply_chain_env.OWMREnvironment'>",
+    "env_config": {
+      "allocation_type": "sequential_allocation",
+      "cost_emergency_shipment": 0,
+      "delay_to_stores": 1,
+      "delay_to_warehouse": 2,
+      "demand_distribution": [
+        "uniform",
+        "normal",
+        "poisson"
+      ],
+      "episode_length": 100,
+      "full_state": true,
+      "is_emergency_shipment": false,
+      "is_retailer_backlog": true,
+      "max_allowed_action": 30,
+      "mean_demand_stores": [
+        0,
+        3,
+        3
+      ],
+      "number_of_stores": 3,
+      "prob_customer_waiting": 0.8,
+      "production_capacity": 0,
+      "shortage_cost": 9,
+      "std_demand_stores": [
+        6,
+        1,
+        3
+      ],
+      "store_capacity": 0,
+      "store_holding_cost": 1,
+      "warehouse_capacity": 0,
+      "warehouse_holding_cost": 0.5
+    },
+    "evaluation_config": {
+      "env_config": {
+        "allocation_type": "proportional_allocation",
+        "cost_emergency_shipment": 0,
+        "delay_to_stores": 1,
+        "delay_to_warehouse": 2,
+        "demand_distribution": [
+          "uniform",
+          "normal",
+          "poisson"
+        ],
+        "episode_length": 100,
+        "full_state": true,
+        "is_emergency_shipment": false,
+        "is_retailer_backlog": true,
+        "max_allowed_action": 30,
+        "mean_demand_stores": [
+          0,
+          3,
+          3
+        ],
+        "number_of_stores": 3,
+        "prob_customer_waiting": 0.8,
+        "production_capacity": 0,
+        "shortage_cost": 9,
+        "std_demand_stores": [
+          6,
+          1,
+          3
+        ],
+        "store_capacity": 0,
+        "store_holding_cost": 1,
+        "warehouse_capacity": 0,
+        "warehouse_holding_cost": 0.5
+      },
+      "explore": false
+    },
+    "framework": "tf",
+    "gamma": 0.95,
+    "grad_clip": 40.0,
+    "lambda": 0.98,
+    "lr": 0.0001,
+    "model": {
+      "fcnet_activation": "tanh",
+      "fcnet_hiddens": [
+        64,
+        64
+      ],
+      "vf_share_layers": false
+    },
+    "num_gpus": 0,
+    "num_sgd_iter": 30,
+    "num_workers": 12,
+    "sgd_minibatch_size": 32768,
+    "train_batch_size": 327680,
+    "use_critic": true,
+    "use_gae": true,
+    "vf_clip_param": 1000.0,
+    "vf_loss_coeff": 1e-07
+  },
+  "saved_protocol_evidence_source": null,
+  "saved_protocol_all_sources": [],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": "scm_rl-master/experiments/scenario_2/ray_results/PPO/PPO_OWMREnvironment_c4547_00000_0_2026-07-09_02-49-40/params.json"
+}

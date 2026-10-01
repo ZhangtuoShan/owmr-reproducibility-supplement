@@ -1,0 +1,111 @@
+{
+  "manifest_family": "sensitivity",
+  "paper_table_label": "sensitivity-analysis (draft)",
+  "paper_table_description": "Sensitivity 13; final LaTeX label not fixed",
+  "manifest_row": {
+    "benchmark": "RA-SAC ineq.",
+    "case": "sensitivity-6",
+    "status": "validated",
+    "validated_mean_cost": "39.019318",
+    "validated_se": "0.0479252928272",
+    "validated_median": "38.994",
+    "checkpoint_or_policy": "outputs/train/rasac_all_cases_long_from_scratch_20260803_ineq_sensitivity-6_transfer_best/sensitivity-6/actor__000000276992_-0038.430.pt",
+    "training_step": "276992",
+    "training_avgR": "-38.43",
+    "training_rank": "1",
+    "variant": "transfer_best",
+    "source": "outputs/evaluation/table15_sensitivity13_long_top3_common1000_20260806/summary.md",
+    "demand_bank": "outputs/evaluation/sensitivity13_rasac_ro_common1000_20260802/demand_banks/sensitivity-6.npz",
+    "notes": "minimum formal mean among all completed compatible reevaluations",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "outputs/train/rasac_all_cases_long_from_scratch_20260803_ineq_sensitivity-6_transfer_best/sensitivity-6/actor__000000276992_-0038.430.pt",
+  "packaged_checkpoint_path": "models/native/6fd475d9fa24e981.pt",
+  "packaged_trial_dir": null,
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "outputs/train/rasac_all_cases_long_from_scratch_20260803_ineq_sensitivity-6_transfer_best/sensitivity-6/actor__000000276992_-0038.430.pt",
+  "checkpoint_sha256": "6fd475d9fa24e9819b6a2a498236440d781232baf68e86ff96f816bc7137a572",
+  "training_step": "276992",
+  "training_seed": null,
+  "training_budget_steps": 5000000,
+  "observed_final_training_step": 4997632,
+  "action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 29.0
+    },
+    "cdc_bsl_min_override": 43.0,
+    "cdc_bsl_max_override": 69.0,
+    "table15_action_space_profile": "size_aware_v2_joint_cdc",
+    "cdc_lower_rule": "legacy"
+  },
+  "resolved_action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 29.0
+    },
+    "cdc_bsl_min_override": 43.0,
+    "cdc_bsl_max_override": 69.0,
+    "table15_action_space_profile": "size_aware_v2_joint_cdc",
+    "cdc_lower_rule": "legacy"
+  },
+  "configuration_evidence": "checkpoint-matched archived protocol",
+  "saved_protocol": {
+    "dataset": "sensitivity13_corrected case sensitivity-6 index=5",
+    "benchmark": "ra_sac_ineq",
+    "agent": "AgentSAC",
+    "allocation_rule": "prioritized_greedy_inequality",
+    "lr": 0.0005,
+    "reward_scale": 0.001953125,
+    "gamma": 0.96,
+    "net_dims": [
+      64,
+      32
+    ],
+    "batch_size": 64,
+    "repeat_times": 1.0,
+    "horizon_len": 512,
+    "break_step": 5000000,
+    "warmup_steps": 10000,
+    "replay_store_after_period": 0,
+    "training_episode_steps": 300,
+    "rb_bootstrap": "none",
+    "rb_steps": null,
+    "rb_bc_updates": 1000,
+    "fixed_state_norm": true,
+    "alpha_lr": 2.5e-05,
+    "resume_lr_override": null,
+    "resume_alpha_lr_override": null,
+    "save_best_training_state": true,
+    "save_replay_buffer": false,
+    "training_eval_profile": "custom",
+    "eval_per_step": 10000,
+    "eval_times": 20,
+    "eval_episode_steps": 300,
+    "eval_burn_in_steps": 150,
+    "device": "cpu",
+    "cwd": "/Users/zhangtuo_shan/Documents/Resarch/华为库存项目/材料整理0809/code_new_input_1009/outputs/train/rasac_all_cases_long_from_scratch_20260803_ineq_sensitivity-6_transfer_best/sensitivity-6",
+    "adaptive": true,
+    "table15_action_space_profile": "size_aware_v2_joint_cdc",
+    "cdc_buffer_mode": "required",
+    "cdc_buffer_alpha": 0.0,
+    "cdc_lower_rule": "legacy",
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 29.0
+    },
+    "cdc_bsl_min_override": 43.0,
+    "cdc_bsl_max_override": 69.0
+  },
+  "ray_params": null,
+  "saved_protocol_evidence_source": "outputs/evaluation/table15_sensitivity13_long_top3_common1000_20260806/specs.json",
+  "saved_protocol_all_sources": [
+    "outputs/evaluation/table15_sensitivity13_long_top3_common1000_20260806/specs.json"
+  ],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": null
+}

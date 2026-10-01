@@ -1,0 +1,219 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:small_rvi_results",
+  "paper_table_description": "Small-instance diagnostic table",
+  "manifest_row": {
+    "benchmark": "PPO (Kaynov source)",
+    "case": "S1",
+    "status": "adopted",
+    "best_avgR": "-8.210183",
+    "best_cost": "8.210183",
+    "best_step": "9184000",
+    "final_avgR": "",
+    "checkpoint_or_policy": "scm_rl-master/experiments/scenario_smallrvis1/ray_results/PPO/PPO_OWMREnvironment_4f791_00000_0_2026-07-07_15-06-08/checkpoint_000280",
+    "source": "scm_rl-master/experiments/scenario_smallrvis1/ray_results/PPO/PPO_OWMREnvironment_4f791_00000_0_2026-07-07_15-06-08/progress.csv",
+    "notes": "",
+    "validated_mean_cost": "8.089486",
+    "validated_se": "0.0106726362708",
+    "validated_median": "8.068",
+    "validated_evaluation_source": "outputs/evaluation/s1s2_13bench_rvi_1000ep_20260728/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "scm_rl-master/experiments/scenario_smallrvis1/ray_results/PPO/PPO_OWMREnvironment_4f791_00000_0_2026-07-07_15-06-08/checkpoint_000280",
+  "packaged_checkpoint_path": "source_snapshot/scm_rl-master/experiments/portable_trials/trial_7e9a36e21b61/checkpoint_000280/checkpoint-280",
+  "packaged_trial_dir": "source_snapshot/scm_rl-master/experiments/portable_trials/trial_7e9a36e21b61",
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "scm_rl-master/experiments/scenario_smallrvis1/ray_results/PPO/PPO_OWMREnvironment_4f791_00000_0_2026-07-07_15-06-08/checkpoint_000280/checkpoint-280",
+  "checkpoint_sha256": "10e5e8db5d3f889f3e4661ac360eb2c7516172a547b92c1cb84d2846be13f1cf",
+  "training_step": "9184000",
+  "training_seed": null,
+  "training_budget_steps": null,
+  "observed_final_training_step": 10004000,
+  "action_bounds": {
+    "max_allowed_action": [
+      7,
+      4,
+      4
+    ],
+    "retailer_max_order_quantities": null,
+    "retailer_action_units": null,
+    "warehouse_action_unit": null,
+    "discrete_branch_counts": [
+      7,
+      4,
+      4
+    ],
+    "CDC_order_quantity_grid_max_before_capacity_clip": 6,
+    "CDC_order_quantity_max_after_production_capacity": 0,
+    "retailer_request_grid_max_after_request_caps": [
+      3,
+      3
+    ],
+    "lower_grid_value": 0,
+    "semantics": "MultiDiscrete branch counts; actual CDC production is also inventory-capacity-clipped; retailer requests are further allocation-clipped"
+  },
+  "resolved_action_bounds": {
+    "max_allowed_action": [
+      7,
+      4,
+      4
+    ],
+    "retailer_max_order_quantities": null,
+    "retailer_action_units": null,
+    "warehouse_action_unit": null,
+    "discrete_branch_counts": [
+      7,
+      4,
+      4
+    ],
+    "CDC_order_quantity_grid_max_before_capacity_clip": 6,
+    "CDC_order_quantity_max_after_production_capacity": 0,
+    "retailer_request_grid_max_after_request_caps": [
+      3,
+      3
+    ],
+    "lower_grid_value": 0,
+    "semantics": "MultiDiscrete branch counts; actual CDC production is also inventory-capacity-clipped; retailer requests are further allocation-clipped"
+  },
+  "configuration_evidence": "Ray params.json",
+  "saved_protocol": null,
+  "ray_params": {
+    "batch_mode": "complete_episodes",
+    "disable_env_checking": true,
+    "env": "<class 'scsim.supply_chain_env.OWMREnvironment'>",
+    "env_config": {
+      "allocation_type": "sequential_allocation",
+      "cost_emergency_shipment": 0,
+      "delay_to_stores": [
+        1,
+        1
+      ],
+      "delay_to_warehouse": 1,
+      "demand_distribution": [
+        "truncated_poisson",
+        "truncated_poisson"
+      ],
+      "episode_length": 100,
+      "full_state": true,
+      "is_emergency_shipment": false,
+      "is_retailer_backlog": true,
+      "max_allowed_action": [
+        7,
+        4,
+        4
+      ],
+      "mean_demand_stores": [
+        1.0,
+        1.0
+      ],
+      "number_of_stores": 2,
+      "prob_customer_waiting": 0.8,
+      "production_capacity": 0,
+      "shortage_cost": [
+        5.0,
+        5.0
+      ],
+      "std_demand_stores": [
+        4.0,
+        4.0
+      ],
+      "store_capacity": 0,
+      "store_holding_cost": [
+        2.0,
+        2.0
+      ],
+      "stores_start_level": [
+        0,
+        0
+      ],
+      "warehouse_capacity": 0,
+      "warehouse_holding_cost": 1.0,
+      "warehouse_start_level": 0
+    },
+    "evaluation_config": {
+      "env_config": {
+        "allocation_type": "connected_buckets_allocation",
+        "cost_emergency_shipment": 0,
+        "delay_to_stores": [
+          1,
+          1
+        ],
+        "delay_to_warehouse": 1,
+        "demand_distribution": [
+          "truncated_poisson",
+          "truncated_poisson"
+        ],
+        "episode_length": 100,
+        "full_state": true,
+        "is_emergency_shipment": false,
+        "is_retailer_backlog": true,
+        "max_allowed_action": [
+          7,
+          4,
+          4
+        ],
+        "mean_demand_stores": [
+          1.0,
+          1.0
+        ],
+        "number_of_stores": 2,
+        "prob_customer_waiting": 0.8,
+        "production_capacity": 0,
+        "shortage_cost": [
+          5.0,
+          5.0
+        ],
+        "std_demand_stores": [
+          4.0,
+          4.0
+        ],
+        "store_capacity": 0,
+        "store_holding_cost": [
+          2.0,
+          2.0
+        ],
+        "stores_start_level": [
+          0,
+          0
+        ],
+        "warehouse_capacity": 0,
+        "warehouse_holding_cost": 1.0,
+        "warehouse_start_level": 0
+      },
+      "explore": false
+    },
+    "framework": "tf",
+    "gamma": 0.95,
+    "grad_clip": 40.0,
+    "lambda": 0.98,
+    "lr": 0.0001,
+    "model": {
+      "fcnet_activation": "tanh",
+      "fcnet_hiddens": [
+        64,
+        64
+      ],
+      "vf_share_layers": false
+    },
+    "num_gpus": 0,
+    "num_sgd_iter": 30,
+    "num_workers": 1,
+    "sgd_minibatch_size": 4096,
+    "train_batch_size": 32768,
+    "use_critic": true,
+    "use_gae": true,
+    "vf_clip_param": 1000.0,
+    "vf_loss_coeff": 1e-07
+  },
+  "saved_protocol_evidence_source": null,
+  "saved_protocol_all_sources": [],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": "scm_rl-master/experiments/scenario_smallrvis1/ray_results/PPO/PPO_OWMREnvironment_4f791_00000_0_2026-07-07_15-06-08/params.json"
+}

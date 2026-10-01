@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "scsim"
+version = "0.1.0"
+description = ""
+authors = ["Illya Kaynov <ikaynov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.22.3"
+matplotlib = "^3.5.1"
+ray = "^1.12.0"
+gym = "^0.23.1"
+tqdm = "^4.64.0"
+pandas = "^1.4.2"
+plotly = "^5.8.0"
+loguru = "^0.6.0"
+protobuf = "^3.20"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

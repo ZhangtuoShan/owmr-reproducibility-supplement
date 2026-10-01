@@ -1,0 +1,376 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:specific_case_results",
+  "paper_table_description": "Table 15 randomized instances",
+  "manifest_row": {
+    "benchmark": "PPO (Kaynov source)",
+    "case": "6-4",
+    "status": "adopted",
+    "best_avgR": "-1.33426653474",
+    "best_cost": "",
+    "best_step": "145200000",
+    "final_avgR": "",
+    "checkpoint_or_policy": "scm_rl-master/experiments/scenario_srcppo64q999b32m16lr1s30h1000cont150m/ray_results/PPO/PPO_OWMREnvironment_7b013_00000_0_2026-08-20_09-21-38/checkpoint_003630",
+    "source": "outputs/evaluation/source_ppo_6_4_q999_150m_top3_common1000_20260823/summary.md",
+    "notes": "source-PPO 6-4 with q0.999 retailer action bounds and H=1000; selected by minimum formal mean among the top three 150M checkpoints; training_rank=3; raw_training_episode_reward=-1.33426653474; formal protocol=deterministic/proportional, common-demand 1000 episodes, 1000 periods, warmup 500",
+    "validated_mean_cost": "299.41541799",
+    "validated_se": "0.291917003099",
+    "validated_median": "299.049968446",
+    "validated_evaluation_source": "outputs/evaluation/source_ppo_6_4_q999_150m_top3_common1000_20260823/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-23"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "scm_rl-master/experiments/scenario_srcppo64q999b32m16lr1s30h1000cont150m/ray_results/PPO/PPO_OWMREnvironment_7b013_00000_0_2026-08-20_09-21-38/checkpoint_003630",
+  "packaged_checkpoint_path": "source_snapshot/scm_rl-master/experiments/portable_trials/trial_83a11bf396b0/checkpoint_003630/checkpoint-3630",
+  "packaged_trial_dir": "source_snapshot/scm_rl-master/experiments/portable_trials/trial_83a11bf396b0",
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "scm_rl-master/experiments/scenario_srcppo64q999b32m16lr1s30h1000cont150m/ray_results/PPO/PPO_OWMREnvironment_7b013_00000_0_2026-08-20_09-21-38/checkpoint_003630/checkpoint-3630",
+  "checkpoint_sha256": "cb91e66667dc938d9d35ac5267f305c5143a491eeb61c14925f163bd2630f535",
+  "training_step": "145200000",
+  "training_seed": 0,
+  "training_budget_steps": null,
+  "observed_final_training_step": 150000000,
+  "action_bounds": {
+    "max_allowed_action": [
+      69,
+      43,
+      74,
+      66,
+      74,
+      56,
+      35
+    ],
+    "retailer_max_order_quantities": [
+      42,
+      73,
+      65,
+      73,
+      55,
+      34
+    ],
+    "retailer_action_units": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "warehouse_action_unit": 4,
+    "discrete_branch_counts": [
+      69,
+      43,
+      74,
+      66,
+      74,
+      56,
+      35
+    ],
+    "CDC_order_quantity_grid_max_before_capacity_clip": 272,
+    "CDC_order_quantity_max_after_production_capacity": 272,
+    "retailer_request_grid_max_after_request_caps": [
+      42,
+      73,
+      65,
+      73,
+      55,
+      34
+    ],
+    "lower_grid_value": 0,
+    "semantics": "MultiDiscrete branch counts; actual CDC production is also inventory-capacity-clipped; retailer requests are further allocation-clipped"
+  },
+  "resolved_action_bounds": {
+    "max_allowed_action": [
+      69,
+      43,
+      74,
+      66,
+      74,
+      56,
+      35
+    ],
+    "retailer_max_order_quantities": [
+      42,
+      73,
+      65,
+      73,
+      55,
+      34
+    ],
+    "retailer_action_units": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "warehouse_action_unit": 4,
+    "discrete_branch_counts": [
+      69,
+      43,
+      74,
+      66,
+      74,
+      56,
+      35
+    ],
+    "CDC_order_quantity_grid_max_before_capacity_clip": 272,
+    "CDC_order_quantity_max_after_production_capacity": 272,
+    "retailer_request_grid_max_after_request_caps": [
+      42,
+      73,
+      65,
+      73,
+      55,
+      34
+    ],
+    "lower_grid_value": 0,
+    "semantics": "MultiDiscrete branch counts; actual CDC production is also inventory-capacity-clipped; retailer requests are further allocation-clipped"
+  },
+  "configuration_evidence": "Ray params.json",
+  "saved_protocol": null,
+  "ray_params": {
+    "batch_mode": "complete_episodes",
+    "clip_param": 0.5,
+    "disable_env_checking": true,
+    "env": "<class 'scsim.supply_chain_env.OWMREnvironment'>",
+    "env_config": {
+      "allocation_type": "sequential_allocation",
+      "cost_emergency_shipment": 0,
+      "delay_to_stores": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "delay_to_warehouse": 3,
+      "demand_distribution": [
+        "poisson",
+        "poisson",
+        "poisson",
+        "poisson",
+        "poisson",
+        "poisson"
+      ],
+      "episode_length": 1000,
+      "full_state": true,
+      "is_emergency_shipment": false,
+      "is_retailer_backlog": true,
+      "max_allowed_action": [
+        69,
+        43,
+        74,
+        66,
+        74,
+        56,
+        35
+      ],
+      "mean_demand_stores": [
+        25.0,
+        50.0,
+        43.0,
+        50.0,
+        35.0,
+        19.0
+      ],
+      "number_of_stores": 6,
+      "prob_customer_waiting": 0.8,
+      "production_capacity": 272,
+      "retailer_action_units": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "retailer_max_order_quantities": [
+        42,
+        73,
+        65,
+        73,
+        55,
+        34
+      ],
+      "reward_scale": 3.814697265625e-06,
+      "shortage_cost": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "std_demand_stores": [
+        5.0,
+        7.0710678118654755,
+        6.557438524302,
+        7.0710678118654755,
+        5.916079783099616,
+        4.358898943540674
+      ],
+      "store_capacity": 0,
+      "store_holding_cost": [
+        1.353535905028486,
+        4.2146358277108265,
+        1.7165178114036777,
+        3.7491392650853643,
+        3.976473807839188,
+        7.964472665895363
+      ],
+      "stores_start_level": [
+        89,
+        27,
+        60,
+        63,
+        35,
+        58
+      ],
+      "warehouse_action_unit": 4,
+      "warehouse_capacity": 2720,
+      "warehouse_holding_cost": 1.0,
+      "warehouse_start_level": 82
+    },
+    "evaluation_config": {
+      "env_config": {
+        "allocation_type": "proportional_allocation",
+        "cost_emergency_shipment": 0,
+        "delay_to_stores": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          3
+        ],
+        "delay_to_warehouse": 3,
+        "demand_distribution": [
+          "poisson",
+          "poisson",
+          "poisson",
+          "poisson",
+          "poisson",
+          "poisson"
+        ],
+        "episode_length": 1000,
+        "full_state": true,
+        "is_emergency_shipment": false,
+        "is_retailer_backlog": true,
+        "max_allowed_action": [
+          69,
+          43,
+          74,
+          66,
+          74,
+          56,
+          35
+        ],
+        "mean_demand_stores": [
+          25.0,
+          50.0,
+          43.0,
+          50.0,
+          35.0,
+          19.0
+        ],
+        "number_of_stores": 6,
+        "prob_customer_waiting": 0.8,
+        "production_capacity": 272,
+        "retailer_action_units": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "retailer_max_order_quantities": [
+          42,
+          73,
+          65,
+          73,
+          55,
+          34
+        ],
+        "reward_scale": 1.0,
+        "shortage_cost": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "std_demand_stores": [
+          5.0,
+          7.0710678118654755,
+          6.557438524302,
+          7.0710678118654755,
+          5.916079783099616,
+          4.358898943540674
+        ],
+        "store_capacity": 0,
+        "store_holding_cost": [
+          1.353535905028486,
+          4.2146358277108265,
+          1.7165178114036777,
+          3.7491392650853643,
+          3.976473807839188,
+          7.964472665895363
+        ],
+        "stores_start_level": [
+          89,
+          27,
+          60,
+          63,
+          35,
+          58
+        ],
+        "warehouse_action_unit": 4,
+        "warehouse_capacity": 2720,
+        "warehouse_holding_cost": 1.0,
+        "warehouse_start_level": 82
+      },
+      "explore": false
+    },
+    "framework": "tf",
+    "gamma": 0.95,
+    "grad_clip": 40.0,
+    "kl_coeff": 0.0,
+    "kl_target": 0.01,
+    "lambda": 0.98,
+    "lr": 0.0001,
+    "model": {
+      "fcnet_activation": "tanh",
+      "fcnet_hiddens": [
+        64,
+        64
+      ],
+      "vf_share_layers": false
+    },
+    "num_gpus": 0,
+    "num_sgd_iter": 30,
+    "num_workers": 8,
+    "seed": 0,
+    "sgd_minibatch_size": 16384,
+    "simple_optimizer": true,
+    "train_batch_size": 32768,
+    "use_critic": true,
+    "use_gae": true,
+    "vf_clip_param": 10.0,
+    "vf_loss_coeff": 0.1
+  },
+  "saved_protocol_evidence_source": null,
+  "saved_protocol_all_sources": [],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": "scm_rl-master/experiments/scenario_srcppo64q999b32m16lr1s30h1000cont150m/ray_results/PPO/PPO_OWMREnvironment_7b013_00000_0_2026-08-20_09-21-38/params.json"
+}

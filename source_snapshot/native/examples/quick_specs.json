@@ -1,0 +1,43 @@
+[
+  {
+    "job": "quick_2_1",
+    "kind": "project_actor",
+    "family": "table15",
+    "case": "2-1",
+    "benchmark": "RA-SAC",
+    "checkpoint": "examples/2_1_actor.pt",
+    "demand_bank": "examples/2_1_demand_bank.npz",
+    "protocol": {
+      "case": "2-1",
+      "case_index": 0,
+      "benchmark": "ra_sac",
+      "agent": "AgentSAC",
+      "allocation_rule": "prioritized_greedy",
+      "lr": 0.0005,
+      "reward_scale": 0.001953125,
+      "gamma": 0.96,
+      "net_dims": [
+        64,
+        32
+      ],
+      "batch_size": 64,
+      "repeat_times": 1.0,
+      "horizon_len": 512,
+      "break_step": 2000000,
+      "warmup_steps": 100000,
+      "fixed_state_norm": true,
+      "alpha_lr": 2.5e-05,
+      "eval_per_step": 10000,
+      "device": "cpu",
+      "cwd": "/Users/zhangtuo_shan/Documents/Resarch/华为库存项目/材料整理0809/code_new_input_1009/outputs/train/sac_eq_2_1_exactalloc_lr0p0005_rs0p00195312_g0p96_rt1_1m_stable_resume2m_20260731_rngfixed_queue/2-1",
+      "rdc_bsl_min_override": null,
+      "cdc_bsl_min_override": 40.0,
+      "rdc_bsl_max_override": {
+        "1": 30.0,
+        "2": 30.0
+      },
+      "cdc_bsl_max_override": 100.0,
+      "action_space_profile": "size_aware_v1"
+    }
+  }
+]

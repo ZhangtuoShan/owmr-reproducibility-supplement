@@ -1,0 +1,87 @@
+number_of_stores: 6
+prob_customer_waiting: 0.8
+allocation_type: proportional_allocation
+delay_to_warehouse: 2
+delay_to_stores:
+- 2
+- 1
+- 4
+- 1
+- 2
+- 4
+warehouse_holding_cost: 1.0
+store_holding_cost:
+- 2.521997529062819
+- 1.7950583275660925
+- 7.1682383653101756
+- 9.58054011575443
+- 1.03553439695123
+- 5.60973037047199
+shortage_cost:
+- 10.0
+- 10.0
+- 10.0
+- 10.0
+- 10.0
+- 10.0
+is_retailer_backlog: true
+store_capacity: 0
+is_emergency_shipment: false
+cost_emergency_shipment: 0
+demand_distribution:
+- poisson
+- poisson
+- poisson
+- poisson
+- poisson
+- poisson
+mean_demand_stores:
+- 38.0
+- 35.0
+- 39.0
+- 39.0
+- 18.0
+- 19.0
+std_demand_stores:
+- 6.164414002968976
+- 5.916079783099616
+- 6.244997998398398
+- 6.244997998398398
+- 4.242640687119285
+- 4.358898943540674
+episode_length: 1000
+full_state: false
+stores_start_level:
+- 72
+- 43
+- 82
+- 88
+- 59
+- 61
+warehouse_start_level: 94
+warehouse_capacity: 2330
+production_capacity: 233
+warehouse_action_unit: 3
+max_allowed_action:
+- 79
+- 59
+- 56
+- 61
+- 61
+- 33
+- 35
+reward_scale: 1.0
+retailer_action_units:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+retailer_max_order_quantities:
+- 58
+- 55
+- 60
+- 60
+- 32
+- 34

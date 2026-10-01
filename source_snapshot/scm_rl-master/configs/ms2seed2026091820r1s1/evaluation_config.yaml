@@ -1,0 +1,4 @@
+full_state: true
+allocation_type: proportional_allocation
+reward_scale: 1.0
+episode_length: 1000

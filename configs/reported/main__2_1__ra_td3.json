@@ -1,0 +1,108 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:specific_case_results",
+  "paper_table_description": "Table 15 randomized instances",
+  "manifest_row": {
+    "benchmark": "RA-TD3",
+    "case": "2-1",
+    "status": "adopted",
+    "best_avgR": "-30.922000",
+    "best_cost": "30.922000",
+    "best_step": "953344",
+    "final_avgR": "",
+    "checkpoint_or_policy": "outputs/transfer/outputs_0801/train/ra_td3_2_1_c006/2-1/actor__000000953344_-0030.922.pt",
+    "source": "outputs/transfer/outputs_0801/logs/ra_td3_table15_rep48_stage1_win_20260724_logs/ra_td3_2_1_c006.log",
+    "notes": "formal 1000-episode selection after 2026-08-05; first formal common-demand result; variant=; training_rank=1",
+    "validated_mean_cost": "31.019148",
+    "validated_se": "0.0385339831052",
+    "validated_median": "30.971",
+    "validated_evaluation_source": "outputs/evaluation/table15_ra_ppo_td3_top3_common1000_20260810/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "outputs/transfer/outputs_0801/train/ra_td3_2_1_c006/2-1/actor__000000953344_-0030.922.pt",
+  "packaged_checkpoint_path": "models/native/6a717bff15b6bb48.pt",
+  "packaged_trial_dir": null,
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "outputs/transfer/outputs_0801/train/ra_td3_2_1_c006/2-1/actor__000000953344_-0030.922.pt",
+  "checkpoint_sha256": "6a717bff15b6bb485a977ae4ee4d18bfb0062ceabe74b491e1f01ab8ad9bc5ee",
+  "training_step": "953344",
+  "training_seed": 0,
+  "training_budget_steps": 1000000,
+  "observed_final_training_step": 994304,
+  "action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "cdc_bsl_min_override": 40.0,
+    "cdc_bsl_max_override": 100.0,
+    "table15_action_space_profile": "size_aware_v1",
+    "cdc_lower_rule": null
+  },
+  "resolved_action_bounds": {
+    "semantics": "continuous CDC/retailer target inventory-position BSL ranges in evaluation environment",
+    "RDC_lower_by_node": {
+      "1": 10.0,
+      "2": 10.0
+    },
+    "RDC_upper_by_node": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "CDC_lower": 40.0,
+    "CDC_upper": 100.0
+  },
+  "configuration_evidence": "formal saved evaluation protocol",
+  "saved_protocol": {
+    "table case 2-1 index": 0,
+    "benchmark": "ra_td3",
+    "agent": "AgentTD3",
+    "allocation_rule": "prioritized_greedy",
+    "lr": 0.0001,
+    "reward_scale": 0.015625,
+    "gamma": 0.96,
+    "net_dims": [
+      64,
+      64
+    ],
+    "batch_size": 512,
+    "repeat_times": 2.0,
+    "horizon_len": 1024,
+    "break_step": 1000000,
+    "warmup_steps": 10000,
+    "fixed_state_norm": true,
+    "alpha_lr": null,
+    "eval_per_step": 10000,
+    "device": "cpu",
+    "cwd": "D:\\code\\windows_table15_transfer_bundle_20260709\\outputs\\train\\ra_td3_2_1_c006\\2-1",
+    "adaptive": true,
+    "table15_action_space_profile": "size_aware_v1",
+    "cdc_buffer_mode": "required",
+    "cdc_buffer_alpha": 0.0,
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "cdc_bsl_min_override": 40.0,
+    "cdc_bsl_max_override": 100.0
+  },
+  "ray_params": null,
+  "saved_protocol_evidence_source": "outputs/evaluation/manifest_three_seed_common1000_20260923/results.json",
+  "saved_protocol_all_sources": [
+    "outputs/evaluation/manifest_three_seed_common1000_20260923/parts/ratd3_2_1_seed0.json",
+    "outputs/evaluation/manifest_three_seed_common1000_20260923/results.json",
+    "outputs/evaluation/manifest_three_seed_common1000_20260923/specs.json",
+    "outputs/evaluation/table15_ra_ppo_td3_top3_common1000_20260810/specs.json"
+  ],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": null
+}

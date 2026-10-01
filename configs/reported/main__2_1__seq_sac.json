@@ -1,0 +1,107 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:specific_case_results",
+  "paper_table_description": "Table 15 randomized instances",
+  "manifest_row": {
+    "benchmark": "SA-SAC",
+    "case": "2-1",
+    "status": "adopted",
+    "best_avgR": "-30.85",
+    "best_cost": "30.85",
+    "best_step": "984000",
+    "final_avgR": "",
+    "checkpoint_or_policy": "outputs/train/sa_sac_2_1_stage1_c07_lr0p0003_rs0p015625_g0p96_rt0p5/2-1/actor__000000983552_-0030.853.pt",
+    "source": "outputs/logs/pa_sa_sac_table15_stage1_curated_20260727_logs/sa_sac_2_1_stage1_c07_lr0p0003_rs0p015625_g0p96_rt0p5.log",
+    "notes": "formal common-demand selection through 2026-08-14; first completed formal common-demand result; variant=manifest_pending_formal_common1000; training_rank=0",
+    "validated_mean_cost": "30.907554",
+    "validated_se": "0.0362610705623",
+    "validated_median": "30.872",
+    "validated_evaluation_source": "outputs/evaluation/manifest_pending_common1000_20260802/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "outputs/train/sa_sac_2_1_stage1_c07_lr0p0003_rs0p015625_g0p96_rt0p5/2-1/actor__000000983552_-0030.853.pt",
+  "packaged_checkpoint_path": "models/native/0082e9ab2ecb2887.pt",
+  "packaged_trial_dir": null,
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "outputs/train/sa_sac_2_1_stage1_c07_lr0p0003_rs0p015625_g0p96_rt0p5/2-1/actor__000000983552_-0030.853.pt",
+  "checkpoint_sha256": "0082e9ab2ecb28873f6200029a72312487ba24c4a80ad9368059c6232de097bb",
+  "training_step": "984000",
+  "training_seed": 0,
+  "training_budget_steps": 1000000,
+  "observed_final_training_step": 993792,
+  "action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "cdc_bsl_min_override": 40.0,
+    "cdc_bsl_max_override": 100.0,
+    "table15_action_space_profile": "size_aware_v1",
+    "cdc_lower_rule": null
+  },
+  "resolved_action_bounds": {
+    "semantics": "continuous CDC/retailer target inventory-position BSL ranges in evaluation environment",
+    "RDC_lower_by_node": {
+      "1": 10.0,
+      "2": 10.0
+    },
+    "RDC_upper_by_node": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "CDC_lower": 40.0,
+    "CDC_upper": 100.0
+  },
+  "configuration_evidence": "formal saved evaluation protocol",
+  "saved_protocol": {
+    "table case 2-1 index": 0,
+    "benchmark": "sa_sac",
+    "agent": "AgentSAC",
+    "allocation_rule": "random_sequential",
+    "lr": 0.0003,
+    "reward_scale": 0.015625,
+    "gamma": 0.96,
+    "net_dims": [
+      64,
+      32
+    ],
+    "batch_size": 64,
+    "repeat_times": 0.5,
+    "horizon_len": 512,
+    "break_step": 1000000,
+    "warmup_steps": 10000,
+    "fixed_state_norm": true,
+    "alpha_lr": 2.5e-05,
+    "eval_per_step": 10000,
+    "device": "cpu",
+    "cwd": "/Users/zhangtuo_shan/Documents/Resarch/华为库存项目/材料整理0809/code_new_input_1009/outputs/train/sa_sac_2_1_stage1_c07_lr0p0003_rs0p015625_g0p96_rt0p5/2-1",
+    "adaptive": true,
+    "table15_action_space_profile": "size_aware_v1",
+    "cdc_buffer_mode": "required",
+    "cdc_buffer_alpha": 0.0,
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 30.0,
+      "2": 30.0
+    },
+    "cdc_bsl_min_override": 40.0,
+    "cdc_bsl_max_override": 100.0
+  },
+  "ray_params": null,
+  "saved_protocol_evidence_source": "outputs/evaluation/manifest_three_seed_common1000_20260923/results.json",
+  "saved_protocol_all_sources": [
+    "outputs/evaluation/manifest_three_seed_common1000_20260923/parts/seqsac_2_1_seed0.json",
+    "outputs/evaluation/manifest_three_seed_common1000_20260923/results.json",
+    "outputs/evaluation/manifest_three_seed_common1000_20260923/specs.json"
+  ],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": null
+}

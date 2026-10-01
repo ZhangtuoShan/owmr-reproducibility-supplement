@@ -1,0 +1,104 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:specific_case_results",
+  "paper_table_description": "Table 15 randomized instances",
+  "manifest_row": {
+    "benchmark": "RA-SAC",
+    "case": "2-2",
+    "status": "adopted",
+    "best_avgR": "-0054.974",
+    "best_cost": "54.974",
+    "best_step": "492032",
+    "final_avgR": "",
+    "checkpoint_or_policy": "outputs/train/sac_eq_2_2_exactalloc_lr0p0005_rs0p00195312_g0p96_rt1_1m/2-2/actor__000000492032_-0054.974.pt",
+    "source": "outputs/summaries/Table15_SAC_eq_ineq_exact_20260724_summary.md",
+    "notes": "",
+    "validated_mean_cost": "55.1755064",
+    "validated_se": "0.0732155255992",
+    "validated_median": "55.02709",
+    "validated_evaluation_source": "outputs/evaluation/table15_four_methods_common1000_20260731/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": null,
+  "selected_checkpoint_or_policy": "outputs/train/sac_eq_2_2_exactalloc_lr0p0005_rs0p00195312_g0p96_rt1_1m/2-2/actor__000000492032_-0054.974.pt",
+  "packaged_checkpoint_path": "models/native/d38b50c3ba7a3bed.pt",
+  "packaged_trial_dir": null,
+  "checkpoint_available_at_packaging": true,
+  "checkpoint_hash_target": "outputs/train/sac_eq_2_2_exactalloc_lr0p0005_rs0p00195312_g0p96_rt1_1m/2-2/actor__000000492032_-0054.974.pt",
+  "checkpoint_sha256": "d38b50c3ba7a3bed4dc40d234c69a05b66cf7e48a49a3c668d102206b14a9da1",
+  "training_step": "492032",
+  "training_seed": null,
+  "training_budget_steps": 1000000,
+  "observed_final_training_step": 993792,
+  "action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 60.0,
+      "2": 61.0
+    },
+    "cdc_bsl_min_override": 141.0,
+    "cdc_bsl_max_override": 239.0,
+    "table15_action_space_profile": null,
+    "cdc_lower_rule": null
+  },
+  "resolved_action_bounds": {
+    "rdc_bsl_min_override": null,
+    "rdc_bsl_max_override": {
+      "1": 60.0,
+      "2": 61.0
+    },
+    "cdc_bsl_min_override": 141.0,
+    "cdc_bsl_max_override": 239.0,
+    "table15_action_space_profile": null,
+    "cdc_lower_rule": null
+  },
+  "configuration_evidence": "checkpoint-matched archived protocol",
+  "saved_protocol": {
+    "case": "2-2",
+    "case_index": 1,
+    "benchmark": "ra_sac",
+    "agent": "AgentSAC",
+    "allocation_rule": "prioritized_greedy",
+    "lr": 0.0005,
+    "reward_scale": 0.001953125,
+    "gamma": 0.96,
+    "net_dims": [
+      64,
+      32
+    ],
+    "batch_size": 64,
+    "repeat_times": 1.0,
+    "horizon_len": 512,
+    "break_step": 1000000,
+    "warmup_steps": 10000,
+    "fixed_state_norm": true,
+    "alpha_lr": 2.5e-05,
+    "eval_per_step": 10000,
+    "device": "cpu",
+    "cwd": "/Users/zhangtuo_shan/Documents/Resarch/华为库存项目/材料整理0809/code_new_input_1009/outputs/train/sac_eq_2_2_exactalloc_lr0p0005_rs0p00195312_g0p96_rt1_1m/2-2",
+    "rdc_bsl_min_override": null,
+    "cdc_bsl_min_override": 141.0,
+    "rdc_bsl_max_override": {
+      "1": 60.0,
+      "2": 61.0
+    },
+    "cdc_bsl_max_override": 239.0,
+    "action_space_profile": "size_aware_v1"
+  },
+  "ray_params": null,
+  "saved_protocol_evidence_source": "outputs/evaluation/table15_four_methods_common1000_20260731/specs.json",
+  "saved_protocol_all_sources": [
+    "outputs/analysis/reallocation_activity_figures12_20260815/specs.json",
+    "outputs/analysis/reallocation_local_advantage_figure3_20260815/specs.json",
+    "outputs/evaluation/table15_four_methods_common1000_20260731/specs.json",
+    "outputs/summaries/rasac_all_cases_long_from_scratch_20260803_plan.json"
+  ],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": null
+}

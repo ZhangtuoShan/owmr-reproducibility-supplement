@@ -1,0 +1,32 @@
+number_of_stores: 10
+prob_customer_waiting: 0.8
+
+allocation_type: proportional_allocation
+
+delay_to_warehouse: 2
+delay_to_stores: 2
+
+warehouse_holding_cost: 3
+store_holding_cost: 3
+shortage_cost: 60
+is_retailer_backlog: False
+
+store_capacity: 100
+is_emergency_shipment: True
+
+cost_emergency_shipment: 0
+demand_distribution: normal
+mean_demand_stores: 5
+std_demand_stores: 14
+
+episode_length: 100
+
+full_state: False
+#stores_start_level: 3
+#warehouse_start_level: 18
+
+warehouse_capacity: 1000
+production_capacity: 100
+
+max_allowed_action:
+  [101, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26]

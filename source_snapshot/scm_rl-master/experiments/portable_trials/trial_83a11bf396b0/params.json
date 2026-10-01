@@ -1,0 +1,233 @@
+{
+  "batch_mode": "complete_episodes",
+  "clip_param": 0.5,
+  "disable_env_checking": true,
+  "env": "<class 'scsim.supply_chain_env.OWMREnvironment'>",
+  "env_config": {
+    "allocation_type": "sequential_allocation",
+    "cost_emergency_shipment": 0,
+    "delay_to_stores": [
+      4,
+      1,
+      1,
+      1,
+      1,
+      3
+    ],
+    "delay_to_warehouse": 3,
+    "demand_distribution": [
+      "poisson",
+      "poisson",
+      "poisson",
+      "poisson",
+      "poisson",
+      "poisson"
+    ],
+    "episode_length": 1000,
+    "full_state": true,
+    "is_emergency_shipment": false,
+    "is_retailer_backlog": true,
+    "max_allowed_action": [
+      69,
+      43,
+      74,
+      66,
+      74,
+      56,
+      35
+    ],
+    "mean_demand_stores": [
+      25.0,
+      50.0,
+      43.0,
+      50.0,
+      35.0,
+      19.0
+    ],
+    "number_of_stores": 6,
+    "prob_customer_waiting": 0.8,
+    "production_capacity": 272,
+    "retailer_action_units": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retailer_max_order_quantities": [
+      42,
+      73,
+      65,
+      73,
+      55,
+      34
+    ],
+    "reward_scale": 3.814697265625e-06,
+    "shortage_cost": [
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "std_demand_stores": [
+      5.0,
+      7.0710678118654755,
+      6.557438524302,
+      7.0710678118654755,
+      5.916079783099616,
+      4.358898943540674
+    ],
+    "store_capacity": 0,
+    "store_holding_cost": [
+      1.353535905028486,
+      4.2146358277108265,
+      1.7165178114036777,
+      3.7491392650853643,
+      3.976473807839188,
+      7.964472665895363
+    ],
+    "stores_start_level": [
+      89,
+      27,
+      60,
+      63,
+      35,
+      58
+    ],
+    "warehouse_action_unit": 4,
+    "warehouse_capacity": 2720,
+    "warehouse_holding_cost": 1.0,
+    "warehouse_start_level": 82
+  },
+  "evaluation_config": {
+    "env_config": {
+      "allocation_type": "proportional_allocation",
+      "cost_emergency_shipment": 0,
+      "delay_to_stores": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "delay_to_warehouse": 3,
+      "demand_distribution": [
+        "poisson",
+        "poisson",
+        "poisson",
+        "poisson",
+        "poisson",
+        "poisson"
+      ],
+      "episode_length": 1000,
+      "full_state": true,
+      "is_emergency_shipment": false,
+      "is_retailer_backlog": true,
+      "max_allowed_action": [
+        69,
+        43,
+        74,
+        66,
+        74,
+        56,
+        35
+      ],
+      "mean_demand_stores": [
+        25.0,
+        50.0,
+        43.0,
+        50.0,
+        35.0,
+        19.0
+      ],
+      "number_of_stores": 6,
+      "prob_customer_waiting": 0.8,
+      "production_capacity": 272,
+      "retailer_action_units": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "retailer_max_order_quantities": [
+        42,
+        73,
+        65,
+        73,
+        55,
+        34
+      ],
+      "reward_scale": 1.0,
+      "shortage_cost": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "std_demand_stores": [
+        5.0,
+        7.0710678118654755,
+        6.557438524302,
+        7.0710678118654755,
+        5.916079783099616,
+        4.358898943540674
+      ],
+      "store_capacity": 0,
+      "store_holding_cost": [
+        1.353535905028486,
+        4.2146358277108265,
+        1.7165178114036777,
+        3.7491392650853643,
+        3.976473807839188,
+        7.964472665895363
+      ],
+      "stores_start_level": [
+        89,
+        27,
+        60,
+        63,
+        35,
+        58
+      ],
+      "warehouse_action_unit": 4,
+      "warehouse_capacity": 2720,
+      "warehouse_holding_cost": 1.0,
+      "warehouse_start_level": 82
+    },
+    "explore": false
+  },
+  "framework": "tf",
+  "gamma": 0.95,
+  "grad_clip": 40.0,
+  "kl_coeff": 0.0,
+  "kl_target": 0.01,
+  "lambda": 0.98,
+  "lr": 0.0001,
+  "model": {
+    "fcnet_activation": "tanh",
+    "fcnet_hiddens": [
+      64,
+      64
+    ],
+    "vf_share_layers": false
+  },
+  "num_gpus": 0,
+  "num_sgd_iter": 30,
+  "num_workers": 8,
+  "seed": 0,
+  "sgd_minibatch_size": 16384,
+  "simple_optimizer": true,
+  "train_batch_size": 32768,
+  "use_critic": true,
+  "use_gae": true,
+  "vf_clip_param": 10.0,
+  "vf_loss_coeff": 0.1
+}

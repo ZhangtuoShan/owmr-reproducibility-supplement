@@ -1,0 +1,53 @@
+{
+  "manifest_family": "main",
+  "paper_table_label": "tab:specific_case_results",
+  "paper_table_description": "Table 15 randomized instances",
+  "manifest_row": {
+    "benchmark": "RB",
+    "case": "2-2",
+    "status": "adopted",
+    "best_avgR": "-54.722",
+    "best_cost": "54.722",
+    "best_step": "",
+    "final_avgR": "",
+    "checkpoint_or_policy": "CDC=182.000; RDC={0: 108.0, 1: 52, 2: 56}",
+    "source": "outputs/summaries/table15_ro_rb_cdc_window_fix_20260723.md",
+    "notes": "",
+    "validated_mean_cost": "54.88980994",
+    "validated_se": "0.0720644043977",
+    "validated_median": "54.73913",
+    "validated_evaluation_source": "outputs/evaluation/table15_four_methods_common1000_20260731/summary.md",
+    "candidate_best_avgR": "",
+    "candidate_best_cost": "",
+    "candidate_best_step": "",
+    "candidate_checkpoint_or_policy": "",
+    "candidate_source": "",
+    "candidate_status": "validated",
+    "last_audited": "2026-08-14"
+  },
+  "structured_heuristic_policy": {
+    "CDC_target": 182.0,
+    "retailer_targets": {
+      "0": 108.0,
+      "1": 52,
+      "2": 56
+    }
+  },
+  "selected_checkpoint_or_policy": "CDC=182.000; RDC={0: 108.0, 1: 52, 2: 56}",
+  "checkpoint_available_at_packaging": false,
+  "checkpoint_hash_target": null,
+  "checkpoint_sha256": null,
+  "training_step": null,
+  "training_seed": null,
+  "training_budget_steps": null,
+  "observed_final_training_step": null,
+  "action_bounds": {},
+  "resolved_action_bounds": {},
+  "configuration_evidence": "heuristic parameters/method in manifest",
+  "saved_protocol": null,
+  "ray_params": null,
+  "saved_protocol_evidence_source": null,
+  "saved_protocol_all_sources": [],
+  "saved_protocol_material_conflicts": [],
+  "source_params_path": null
+}
